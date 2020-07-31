@@ -12,7 +12,7 @@ import { IssueService } from '../issue.service';
 @Component({
   selector: 'app-issue-search',
   templateUrl: './issue-search.component.html',
-  styleUrls: [ './issue-search.component.css' ]
+  styleUrls: [ './issue-search.component.css', "../global.css"  ]
 })
 export class IssueSearchComponent implements OnInit {
   issues$: Observable<Issue[]>;

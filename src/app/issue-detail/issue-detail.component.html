@@ -1,6 +1,6 @@
 <!-- *ngIf: Only adds the contents to the DOM if the argument is truthy -->
 <div *ngIf="issue" class="issues">
-    <h3>Details for issue: {{issue.text}}</h3>
+    <h2>Details for issue: {{issue.text}}</h2>
     <span class="label">
         <div>
             ID: {{issue.id}}
@@ -8,10 +8,11 @@
         <div>
             Text: <input [(ngModel)]="issue.text" placeholder="descriptive text"/>
         </div>
-        <div>
-            Fcks given: {{issue.fcks}}
-        </div>
+        <p>
+            Fcks given: <span class=fcks>{{issue.fcks}}</span>
+        </p>
     </span>
-    <button (click)="save()">save</button>
-    <button (click)="goBack()">discard</button>
+    <button class=save (click)="save()">save</button>
+    <button class=back (click)="goBack()">back</button>
+    <button class=give-fck (click)="giveFck()">give a fck</button>
 </div>

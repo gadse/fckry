@@ -8,7 +8,7 @@ import { Issue } from "../issue";
 @Component({
   selector: 'app-issue-detail',
   templateUrl: './issue-detail.component.html',
-  styleUrls: ['./issue-detail.component.css']
+  styleUrls: ['./issue-detail.component.css', "../global.css" ]
 })
 export class IssueDetailComponent implements OnInit {
 
@@ -39,6 +39,11 @@ export class IssueDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  giveFck(): void {
+    this.issue.fcks += 1;
+    this.issueService.updateIssue(this.issue).subscribe(() => null);
   }
 
 }
