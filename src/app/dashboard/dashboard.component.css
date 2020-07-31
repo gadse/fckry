@@ -32,10 +32,20 @@ h4 {
   padding: 20px;
   text-align: center;
   color: #eee;
-  max-height: 120px;
+  height: 120px;
   min-width: 120px;
   background-color: #3f525c;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+.fcks {
+  color: #3f525c;
+  background-color: orange;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
 }
 .module:hover {
   background-color: #eee;

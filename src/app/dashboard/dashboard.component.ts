@@ -19,6 +19,6 @@ export class DashboardComponent implements OnInit {
   fetchIssues(): void {
     this.issueService
       .getIssues()
-      .subscribe(issues => this.issues = issues.slice(1, 5));
+      .subscribe(issues => this.issues = issues.sort((a,b) => +(a.fcks <= b.fcks)).slice(0, 4));
   }
 }

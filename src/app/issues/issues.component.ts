@@ -38,6 +38,12 @@ export class IssuesComponent implements OnInit {
     this.issueService.deleteIssue(issue).subscribe();
   }
 
+  giveFck(givenIssue: Issue): void {
+    let foundIssue: Issue = this.issues.find(issue => issue === givenIssue);
+    foundIssue.fcks += 1;
+    this.issueService.updateIssue(givenIssue).subscribe(() => null);;
+  }
+
   /**
    * Lifecycle hook!
    */

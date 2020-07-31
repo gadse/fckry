@@ -8,6 +8,9 @@
         <div>
             Text: <input [(ngModel)]="issue.text" placeholder="descriptive text"/>
         </div>
+        <div>
+            Fcks given: {{issue.fcks}}
+        </div>
     </span>
     <button (click)="save()">save</button>
     <button (click)="goBack()">discard</button>

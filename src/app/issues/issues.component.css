@@ -3,7 +3,7 @@
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 30em;
+  width: 40em;
 }
 .issues li {
   position: relative;
@@ -69,5 +69,13 @@ button.delete {
   right: -94%;
   top: -32px;
   background-color: gray !important;
+  color: white;
+}
+
+button.give-fck {
+  position: relative;
+  right: -78%;
+  top: -32px;
+  background-color: orange !important;
   color: white;
 }
