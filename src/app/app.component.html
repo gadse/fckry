@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<nav>
+    <a routerLink="/issues">Issues</a>
+    <a routerLink="/dashboard">Dashboard</a>
+  </nav>
+<!-- available to the AppComponent because AppModule imports 
+    AppRoutingModule which exported RouterModule -->
+<router-outlet></router-outlet>
+<app-messages></app-messages>

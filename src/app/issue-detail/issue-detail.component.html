@@ -1,0 +1,14 @@
+<!-- *ngIf: Only adds the contents to the DOM if the argument is truthy -->
+<div *ngIf="issue" class="issues">
+    <h3>Details for issue: {{issue.text}}</h3>
+    <span class="label">
+        <div>
+            ID: {{issue.id}}
+        </div>
+        <div>
+            Text: <input [(ngModel)]="issue.text" placeholder="descriptive text"/>
+        </div>
+    </span>
+    <button (click)="save()">save</button>
+    <button (click)="goBack()">discard</button>
+</div>
