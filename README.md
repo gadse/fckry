@@ -2,6 +2,15 @@
 
 This is a simple, shitty ticket board created purely for fun and learnings! :3
 
+By now, I've invested one day and I'm already quite surprised how far I've got.
+And by how much fun I had!
+
+![Issue List](./screenshots/fckry-issues.png)
+
+![Issue Details](./screenshots/fckry-issue-details.png)
+
+![Issue Dashboard](./screenshots/fckry-dashboard.png)
+
 # Good Learning Resources
 
 ## Angular
