@@ -1,4 +1,18 @@
 /* IssueDetailComponent's private CSS styles */
+h2 {
+    font-family: "Lucida Console", Monaco, monospace !important;
+    color: #eee;
+}
+
+.issues {
+    width: 100%;
+    background-color: #3f525c;
+    color: #eee;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+}
+
 label {
     display: inline-block;
     width: 10em;
@@ -8,6 +22,8 @@ label {
 }
 input {
     height: 2em;
+    background-color: #eee;
+    color: #3f525c;
     width: 40em;
     font-size: 1em;
     padding-left: .4em;
@@ -28,4 +44,12 @@ button:disabled {
     background-color: #eee;
     color: #ccc;
     cursor: auto;
+}
+
+button.save {
+    background-color: lightgreen;
+}
+
+button.back {
+    background-color: lightcoral;
 }

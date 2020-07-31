@@ -12,7 +12,7 @@
     <!-- [class.selected] refers to the CSS class instance -->
     <li *ngFor="let issue of issues">
         <a routerLink="/detail/{{issue.id}}">
-            <span class="badge">{{issue.id}} ({{issue.fcks}})</span> {{issue.text}}
+          <span class="badge"> {{issue.id}}</span> <span class="fcks">{{issue.fcks}}</span> {{issue.text}}
         </a>
           <button class="delete" title="delete issue"
               (click)="delete(issue)">x</button>

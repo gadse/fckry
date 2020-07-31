@@ -4,9 +4,9 @@ import { Issue } from "../issue";
 import { IssueService } from "../issue.service";
 
 @Component({
-  selector: 'app-issues',  // CSS element selector!
-  templateUrl: './issues.component.html',  // template file location
-  styleUrls: ['./issues.component.css']  // private stylesheet
+  selector: 'app-issues',
+  templateUrl: './issues.component.html',
+  styleUrls: ['./issues.component.css', "../global.css" ]
 })
 export class IssuesComponent implements OnInit {
 

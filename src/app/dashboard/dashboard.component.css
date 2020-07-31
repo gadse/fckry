@@ -16,11 +16,12 @@ a {
   box-sizing: border-box;
 }
 h3 {
-  text-align: center;
   margin-bottom: 0;
+  font-family: "Lucida Console", Monaco, monospace !important;
 }
 h4 {
   position: relative;
+  font-family: "Lucida Console", Monaco, monospace !important;
 }
 .grid {
   margin: 0;
@@ -35,17 +36,7 @@ h4 {
   height: 120px;
   min-width: 120px;
   background-color: #3f525c;
-  border-radius: 4px;
-}
-.fcks {
-  color: #3f525c;
-  background-color: orange;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  cursor: hand;
-  font-family: Arial;
+  border-radius: 8px;
 }
 .module:hover {
   background-color: #eee;
